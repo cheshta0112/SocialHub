@@ -1,0 +1,17 @@
+[33mcommit 5e0fd51df2e946bab2665b840d526893a1e33157[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Cheshta Pal <cheshtapal07@gmail.com>
+Date:   Wed Jun 21 19:45:52 2023 +0530
+
+    prop types
+
+[33mcommit dda317a049042adb54c9230a66b92e5586521b26[m
+Author: Cheshta Pal <cheshtapal07@gmail.com>
+Date:   Wed Jun 21 18:56:19 2023 +0530
+
+    created home page and loader
+
+[33mcommit 4f5b2717d8c35bf3ac773295145de5286fdf1cb2[m
+Author: Cheshta Pal <cheshtapal07@gmail.com>
+Date:   Wed Jun 21 18:37:47 2023 +0530
+
+    setting up the API
