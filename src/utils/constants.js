@@ -2,7 +2,7 @@ const API_ROOT = 'https://codeial.codingninjas.com:8000/api/v2/';
 
 // doc url - https://www.notion.so/aakashcn/Codeial-API-docs-3a4d0b5a42c54f0a94d951a42aabc13f
 export const API_URLS = {
-  login: () => `${API_ROOT}/users/login`,
+  login: () => `${API_ROOT}users/login`,
   signup: () => `${API_ROOT}/users/signup`,
   posts: (page, limit) => `${API_ROOT}/posts?page=${page}&limit=${limit}`,
   createPost: (content) => `${API_ROOT}/posts/create`,

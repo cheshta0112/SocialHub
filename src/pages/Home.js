@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
-
+import { Comment } from '../components';
 import styles from '../styles/home.module.css';
 
 const Home = ({ posts }) => {
   return (
     <div className={styles.postsList}>
+      {/* to have multiple post */}
       {posts.map((post) => (
         <div className={styles.postWrapper} key={`post-${post._id}`}>
           <div className={styles.postHeader}>
@@ -37,20 +38,15 @@ const Home = ({ posts }) => {
                 <span>2</span>
               </div>
             </div>
+
             <div className={styles.postCommentBox}>
               <input placeholder="Start typing a comment" />
             </div>
 
             <div className={styles.postCommentsList}>
-              <div className={styles.postCommentsItem}>
-                <div className={styles.postCommentHeader}>
-                  <span className={styles.postCommentAuthor}>Bill</span>
-                  <span className={styles.postCommentTime}>a minute ago</span>
-                  <span className={styles.postCommentLikes}>22</span>
-                </div>
-
-                <div className={styles.postCommentContent}>Random comment</div>
-              </div>
+              {post.comments.map((comment) => (
+                <Comment comment={comment} />
+              ))}
             </div>
           </div>
         </div>
@@ -60,8 +56,9 @@ const Home = ({ posts }) => {
 };
 
 //adding properties
-Home.propTypes = {  //add objects 
-  posts: PropTypes.array.isRequired,  //define all the props which this home components will get
+Home.propTypes = {
+  //add objects
+  posts: PropTypes.array.isRequired, //define all the props which this home components will get
 };
 
 export default Home;

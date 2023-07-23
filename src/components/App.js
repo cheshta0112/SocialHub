@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { getPosts } from '../api';
-import { Home } from '../pages';
-import { Loader , Navbar} from './';
+import { Home, Login } from '../pages';
+import { Loader, Navbar } from './';
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -28,8 +28,13 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
-      <Home posts={posts} />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home posts={posts} />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
