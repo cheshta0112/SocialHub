@@ -1,8 +1,33 @@
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Comment } from '../components';
+import { Comment, Loader } from '../components';
 import styles from '../styles/home.module.css';
+import { useAuth } from '../hooks';
+import { getPosts } from '../api';
 
-const Home = ({ posts }) => {
+const Home = () => {
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const auth = useAuth();
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const response = await getPosts();
+
+      if (response.success) {
+        setPosts(response.data.posts);
+      }
+
+      setLoading(false);
+    };
+
+    fetchPosts();
+  }, []);
+
+  if (auth.loading) {
+    return <Loader />;
+  }
+
   return (
     <div className={styles.postsList}>
       {/* to have multiple post */}
