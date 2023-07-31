@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useToasts } from 'react-toast-notifications';
 import styles from '../styles/login.module.css';
 import { useAuth } from '../hooks';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -10,6 +11,7 @@ const Login = () => {
   const { addToast } = useToasts();
   const auth = useAuth();
   console.log(auth);
+  const history = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,9 +26,11 @@ const Login = () => {
     const response = await auth.login(email, password);
 
     if (response.success) {
+      // history('/');
       addToast('Successfully logged in', {
         appearance: 'success',
       });
+      history('/');
     } else {
       addToast(response.message, {
         appearance: 'error',
@@ -35,6 +39,10 @@ const Login = () => {
 
     setLoggingIn(false);
   };
+
+  // if (auth.user) {
+  //   return <Navigate to="/" />;
+  // }
 
   return (
     <form className={styles.loginForm} onSubmit={handleSubmit}>
