@@ -1,3 +1,8 @@
+body {
+  background-color: #82d8f2;
+}
+/* #8f6ab2  */
+
 .postWrapper {
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
@@ -143,6 +148,7 @@
 
 /* Styles added */
 .home {
+  /* background-color: rgb(233, 224, 156); */
   padding: 20px 50px;
   display: flex;
   width: 80%;
@@ -228,7 +234,7 @@
   height: 42px;
   left: 111.5px;
   top: 0px;
-  background: #ef7917;
+  background: #9333f4;
   border-radius: 3px;
   color: #fff;
   font-size: 16px;

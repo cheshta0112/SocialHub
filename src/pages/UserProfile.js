@@ -40,9 +40,9 @@ const UserProfile = () => {
   }
 
   const checkIfUserIsAFriend = () => {
-    const friends = auth.user?.friends;
+    const friends = auth.user.friends ?? []; // Use an empty array if friends is undefined
 
-    if (friends) {
+    if (friends.length > 0) {
       const friendIds = friends.map((friend) => friend.to_user._id);
       const index = friendIds.indexOf(userId); //index of the current user id which i am looking at
 

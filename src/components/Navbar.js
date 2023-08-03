@@ -30,8 +30,9 @@ const Navbar = () => {
       <div className={styles.leftDiv}>
         <Link to="/">
           <img
-            alt=""
-            src="https://ninjasfiles.s3.amazonaws.com/0000000000003454.png"
+            style={{ height: '50px', width: '200px', marginLeft: '40px' }}
+            alt="my image"
+            src={process.env.PUBLIC_URL + '/images/friend.png'}
           />
         </Link>
       </div>
