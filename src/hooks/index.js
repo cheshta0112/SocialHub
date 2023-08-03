@@ -168,9 +168,31 @@ export const useProvidePosts = () => {
     setPosts(newPosts);
   };
 
+  const addComment = (comment, postId) => {
+    const newPosts = posts.map((post) => {
+      if (post._id === postId) {
+        return { ...post, comments: [...post.comments, comment] };
+      }
+      return post;
+    });
+
+    setPosts(newPosts);
+  };
+
   return {
     data: posts,
     loading,
     addPostToState,
+    addComment,
   };
 };
+
+// export const createComment = async (content, postId) => {
+//   return customFetch(API_URLS.comment(), {
+//     method: 'POST',
+//     body: {
+//       post_id: postId,
+//       content,
+//     },
+//   });
+// };
