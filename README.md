@@ -17,7 +17,8 @@ HOME PAGE AFTER LOGIN
 
 YOU CAN CHANGE YOUR PASSWORD FROM SETTINGS 
 
-![image](https://github.com/cheshta0112/SocialHub/assets/104692214/02967da0-0dd4-4d32-b16d-58bb07c2073e)
+![image](https://github.com/cheshta0112/SocialHub/assets/104692214/ceafd45d-8024-4a95-afdc-d178440a0144)
+
 
 SEARCH YOUR FRIENDS 
 
