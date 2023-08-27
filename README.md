@@ -24,10 +24,10 @@ SEARCH YOUR FRIENDS
 
 ![image](https://github.com/cheshta0112/SocialHub/assets/104692214/d9799b20-83e3-4cd8-b27e-5bfd921fb957)
 
-ADD OR REMOVE THEM IN YOUR FRIEND LIST 
+ADD OR REMOVE THEM FROM YOUR FRIEND LIST 
 
 ![image](https://github.com/cheshta0112/SocialHub/assets/104692214/2db6e04c-32fb-4c21-8207-42a32e6d57c8)
 
-YOU CAN ALSO POST , COMMENT AND LIKE 
+YOU CAN ALSO POST, COMMENT AND LIKE 
 
 ![image](https://github.com/cheshta0112/SocialHub/assets/104692214/bcdbaf16-4810-4c81-ba07-84ede448714f)
