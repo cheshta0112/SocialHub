@@ -1,6 +1,9 @@
 .nav {
   display: flex;
-  background: #5630ed;
+  /* background: linear-gradient(to bottom, #b0df4b94, #19b4e7); */
+  /* background-image: linear-gradient(to right, #fc718d, #6a82fb); */
+  background-image: linear-gradient(to right, #ff5779, #506cfd);
+
   padding: 10px 20px;
   align-items: center;
   justify-content: space-between;
